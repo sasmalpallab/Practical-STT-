@@ -1,0 +1,25 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fancyhdr}   % For header and footer
+\usepackage{lipsum}     % For dummy text
+\usepackage{lastpage}   % To refer to the last page number
+\usepackage{geometry}
+\geometry{margin=1in}   % Setting page margins
+
+%--------------------HEADER AND FOOTER SETUP-------------------------
+\pagestyle{fancy}
+\fancyhf{} % Clear the default header/footer
+\fancyhead[C]{\textbf{Sample Document Title}}  % Centered header with the title
+\fancyfoot[L]{\textit{Institute Name}}         % Left-aligned footer with institute name
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}} % Right-aligned footer with page numbers
+
+\begin{document}
+
+%--------------------SECTION 1-------------------------
+\section{Section 1}
+\lipsum[1]  % Dummy text (paragraph 1)
+
+%--------------------SECTION 2-------------------------
+\section{Section 2}
+\lipsum[2]  % Dummy text (paragraph 2)
+
+\end{document}
